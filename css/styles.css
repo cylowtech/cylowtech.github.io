@@ -1,0 +1,218 @@
+*{
+	box-sizing: border-box;
+ 	margin: 0; padding: 0;
+}
+html{
+	font-size: 25px;
+	text-align: justify;
+}
+body{
+	max-width: 1440px;
+	margin: 0 auto;
+	background-color: #232B32;
+}
+main{
+	padding: 10px;
+}
+h1, h2{
+	font-weight: bold;
+	color:#efefef;
+}
+h3{
+	text-align: center;
+	text-decoration: underline;
+	font-size: 1.3em;
+}
+h4{
+	color:#efefef;
+	font-size: 1.2em;
+	line-height: 1.7em;
+}
+a{
+	text-decoration: none;
+	height: 32px;
+	color: #efefef;
+}
+ul{
+	list-style: none;
+	height: 32px;
+}
+p{
+	
+	padding: 20px;
+	color:#efefef;
+	line-height: 1.4em;	/*Pour desserer le texte*/
+}
+li{
+	list-style-type: disc;
+	margin-top:25px;
+	color:#efefef;
+	line-height: 1.4em;
+}
+#logo{
+	width: 32px;
+	height: 32px;
+	display: flex;
+	float: left;	
+}
+#menu{
+	display: inline-block;
+	margin-left: 10px;
+	height: 32px;
+}
+/* petite animation rajoutée sur les titres a voir */
+a:hover {
+	text-decoration: underline;
+	text-shadow: 1px 2px 5px #232B32;
+	color: white;
+}
+.title{
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border-bottom: solid white 1px;
+	font-size: 2.7em;
+	
+}
+.subtitle{
+	height: 54px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border-bottom: solid white 1px;
+	display: block;
+}
+.button{
+	list-style-type: none;
+	display: inline-block;
+	padding-right: 30px;
+	padding-left: 10px;
+	height: 32px;
+	margin:auto  10px;
+	border-right: solid white 1px; /*ajout de cette ligne pour faire une séparation entre titres*/
+}
+/*Bloc principal occupant ~60% de la page mais dont une partie à gauche sert à faire la séparation avec le bloc de gauche (l'espace inter-bloc est compris dans la taille du bloc de gauche)*/
+.tip_bloc_gauche{
+  	padding: 5px;
+	padding-right: 100px;
+	border-right: solid 3px #efefef; /*Ligne séparant les 2 blocs principaux*/
+	position: absolute;
+	margin-right: 50%;
+	margin-left: 5px;
+}
+/*Bloc principal de gauche (~50% de l'espace)*/
+.tip_bloc_droite{
+  	padding: 5px;
+	position: relative; /*Position relative car sa largeur et sa position dépendent du bloc de gauche (qui lui est en "absolute")*/
+	margin-left: 60%;
+	margin-right:5px;
+}
+/*Sous bloc de texte à l'intérieur des blocs principaux (il y en a un pour le bloc de gauche et 2 pour celui de droite)*/
+.tip_sous_bloc{
+	padding: 5px;
+	width: 100%; 	
+}
+.tip_liste{
+	display : inline-table;
+	margin-left: 30px;
+}
+#titre_page{
+	text-align:center;
+	font-size:1.8em;
+}
+.lien_texte{
+	font-size:inherit;
+	text-decoration: underline;
+	text-decoration-color: #e94560;
+}
+.soustitre_environnement{
+	color:#8FBF3B;
+}
+.soustitre_alimentation{
+	color:#e94560;;
+}
+.soustitre_divers{
+	color:#b90eb7;
+}
+.soustitre_dechets{
+	color:#db7100;
+}
+.soustitre_mobilite{
+	color:#8FA3AD;/*#818a97*/
+}
+.soustitre_electricite{
+	color:#F3BD0B;
+}
+.soustitre_apropos{
+	color:#2a9d8f;
+	text-align: left;
+}
+.soustitre_eau{
+	color:#1c51a7;
+}
+.hub_table{
+	width:100%;
+	border-spacing: 7px;
+}
+#hub_divers{
+	width:100%;
+}
+.hub_table td{
+	height:350px;
+	color:white;
+	text-align: center;
+	vertical-align: middle;
+	font-size:2em;
+	font-weight: bold;
+}
+.index_table{
+	/*border: solid red 1px;*/
+	width: 100%;
+	overflow-wrap: break-word;
+}
+.index_table td{
+	height:350px;
+	color:white;
+	vertical-align: top;
+	font-size:1.1em;
+	line-height: 1.35em;
+	padding: 2%;
+	width:30%;
+	/*border: solid red 1px;*/
+}
+#img_index{
+	margin-top:13%;
+	border-radius: 5%;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+footer{
+	color:white;
+	border-top: solid 1px white;
+}
+.footer_td{
+	padding-right: 20px;
+	width: 500px;
+	
+}
+.textfooter{
+	padding: 0px;
+	color:#B0B0B0;
+}
+#copyright{
+	font-size: 0.6em;
+	color:#B0B0B0;
+	margin-top:50px;
+	text-align: center;
+}
+.apropos_mails{
+	padding: 0px;
+	color:#B0B0B0;
+}
+.apropos_texte{
+	font-size:1.1em;
+}
+#apropos_taille{
+	color: white;
+	text-decoration: none;
+	font-weight: normal;
+}
